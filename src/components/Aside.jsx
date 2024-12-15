@@ -37,7 +37,7 @@ const Aside = () => {
       {contactInfo.map((contact) => {
         return (
           <div key={contact.id} className="mb-6">
-            <RiChat3Line className="text-2xl text-lime-400" />
+            <contact.icon className="text-2xl text-lime-400" />
             <h3 className="text-lg font-bold">{contact.title}</h3>
             <p className="mb-2 font-semibold text-stone-600">
               {contact.description}
