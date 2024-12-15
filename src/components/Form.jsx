@@ -1,4 +1,5 @@
 import React from "react";
+import { RiSparkling2Fill, RiMagicLine } from "react-icons/ri";
 
 const services = [
   "Website Design",
@@ -13,7 +14,9 @@ const Form = () => {
   return (
     <div>
       <h1 className="w-96 text-3xl font-semibold">
-        Got Ideas We've got the skills. Let's team up.
+        Got Ideas?{" "}
+        <RiMagicLine className="inline-block text-lime-500 md:text-black" />
+        We've got the skills. Let's team up.
       </h1>
       <p className="my-5 text-xl">
         Tell us more about yourself and what's on your mind.
@@ -58,8 +61,9 @@ const Form = () => {
           })}
         </div>
 
-        <button className="rounded-lg bg-stone-950 p-1 text-white">
-          Let's get started
+        <button className="flex items-center justify-center gap-2 rounded-lg bg-stone-950 p-1 text-white">
+          Let's get started{" "}
+          <RiSparkling2Fill className="text-xl text-lime-400" />
         </button>
       </div>
     </div>
