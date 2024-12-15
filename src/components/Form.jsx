@@ -21,24 +21,28 @@ const Form = () => {
       <p className="my-5 text-xl">
         Tell us more about yourself and what's on your mind.
       </p>
-      <div className="flex w-full flex-col gap-3">
+
+      <form
+        className="flex w-full flex-col gap-3"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSfxJp-wNDhu9v3-HGODhSnFf1PZQlR6I-gEplHmuv9AWD8Kbw/formResponse"
+      >
         <input
           type="text"
-          name="fullname"
           id="fullname"
           placeholder="Your name"
           className="w-full border-b border-zinc-600 p-1 placeholder-stone-600 md:bg-lime-400"
+          name="entry.631322038"
         />
         <input
           type="email"
-          name="email"
+          name="entry.1914670464"
           id="email"
           placeholder="your@company.com"
           className="w-full border-b border-zinc-600 p-1 placeholder-stone-600 md:bg-lime-400"
         />
         <input
           type="text"
-          name="message"
+          name="entry.2144415752"
           id="message"
           placeholder="Tell us a little about your project..."
           className="h-24 w-full border-b border-zinc-600 p-1 placeholder-stone-600 md:bg-lime-400"
@@ -52,7 +56,8 @@ const Form = () => {
               <label className="flex items-center gap-1" key={service}>
                 <input
                   type="checkbox"
-                  name="Website Design"
+                  name="entry.2110795278"
+                  value={service}
                   className="size-5"
                 />{" "}
                 {service}
@@ -65,7 +70,7 @@ const Form = () => {
           Let's get started{" "}
           <RiSparkling2Fill className="text-xl text-lime-400" />
         </button>
-      </div>
+      </form>
     </div>
   );
 };
