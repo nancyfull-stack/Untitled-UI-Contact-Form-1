@@ -3,11 +3,10 @@
 @tailwind utilities;
 
 @layer base {
-    @apply mb-2 rounded border-2 border-black p-2;
-}
-button {
+  input {
+    @apply rounded border-2 border-black p-2;
+  }
+  button {
     @apply rounded bg-blue-500 px-4 py-2;
-
+  }
 }
-
-
